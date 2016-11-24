@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Adivina Quien</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- user-scalable=no -->
+	    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/utilities.css">
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	    <link rel="shortcut icon" href=""> <!-- FAVICON-->
+		</head>
+	<body>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="pb-2 pt-2">Adivina Quién</h1>
+					<p>Bienvenido a <strong>Adivina Quién </strong>. Tu misión es poder identificar a todas tus compañeras de clase <br> ingresado para ellos su nombre. Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente.</p>
+					<p>Selecciona tu sede y oprime el boton de iniciar.</p>
+				</div>
+			</div>
+			<div class="row pt-2">
+				<div class="col-lg-6">
+					<p class="inline-block">Elige tu sede</p>
+					<!-- CAMPOS DE FORMULARIO, LISTAS DESPLEGABLES -->
+					<select class="form-control">
+					  <option>México</option>
+					  <option>Lima</option>
+					  <option>Chile</option>
+					</select>
+					</div>
+				<div class="col-lg-6">
+					<button  id="iniciar" class="btn btn-warning mt-5">Iniciar</button>
+				</div>
+			</div>
+			<section class="fondo-red mt-5">
+				<div class="row pt-5">
+					<div class="col-lg-4">
+						<div class="foto-alum img-circle">
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6">
+								<p>Ingresa el nombre de la alumna</p>
+							</div>
+							<div class="col-lg-6">
+
+								<p>puntos:<span id="contador"> 0 </span>puntos</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<input id="input-name" class="block" type="text" placeholder="">
+								<button id="comprobar" class="btn btn-warning ">Comprobar</button>
+								<p id="text-comp"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					Elaborado por Shantal Govantes | Laboratoria MX
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/funciones.js"></script>
+	</body>
+</html>
